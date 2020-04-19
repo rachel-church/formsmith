@@ -1,0 +1,33 @@
+{
+  "extends": [
+    "react-app",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "prettier/@typescript-eslint",
+    "prettier/react",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "rules": {
+    "prettier/prettier": ["error", {
+      "singleQuote": true,
+      "printWidth": 125
+    }],
+    "max-len": ["error", {"code": 125, "ignoreUrls": true, "ignoreComments": true}],
+    "@typescript-eslint/explicit-function-return-type": ["warn", {
+      "allowExpressions": true
+    }]
+  },
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "es6": true,
+    "node": true
+  }
+}

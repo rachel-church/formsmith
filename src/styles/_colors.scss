@@ -1,0 +1,38 @@
+$white: #fff;
+$black: #000;
+
+$formsmith-rose: #ad6b8f;
+$formsmith-eggplant: #5b3e77;
+$formsmith-blue: #52a9d8;
+$formsmith-red: #e03544;
+$formsmith-gray: #6d6a75;
+
+:root {
+  --aqua: #7fdbff;
+  --blue: #0074d9;
+  --navy: #001f3f;
+  --teal: #39cccc;
+  --green: #2ecc40;
+  --olive: #3d9970;
+  --lime: #01ff70;
+
+  --yellow: #ffdc00;
+  --orange: #ff851b;
+  --red: #ff4136;
+  --fuchsia: #f012be;
+  --purple: #b10dc9;
+  --maroon: #85144b;
+
+  --white: $white;
+  --silver: #ddd;
+  --gray: #aaa;
+  --black: $black;
+}
+
+$theme-primary: $formsmith-rose !default;
+$theme-primary-dark: darken($theme-primary, 50%) !default;
+$theme-secondary: $formsmith-blue !default;
+$theme-tertiary: $formsmith-eggplant !default;
+$theme-error: $formsmith-red !default;
+$theme-background: #fbfbfb !default;
+$theme-disabled: #c7c7c7 !default;
